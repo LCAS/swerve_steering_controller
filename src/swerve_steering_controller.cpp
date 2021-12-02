@@ -278,6 +278,8 @@ namespace swerve_steering_controller
 		  
 		  double wheel_vx = current_cmd.x - current_cmd.w * wheels_[i].position[1] - wheels_[i].offset * cos(holders_joints_handles_[i].getPosition());
 		  double wheel_vy = current_cmd.y + current_cmd.w * wheels_[i].position[0] + wheels_[i].offset * sin(holders_joints_handles_[i].getPosition());
+		  //double wheel_vx = -(current_cmd.x - current_cmd.w * wheels_[i].position[1] - wheels_[i].offset * cos(holders_joints_handles_[i].getPosition()));
+		  //double wheel_vy = -(current_cmd.y + current_cmd.w * wheels_[i].position[0] + wheels_[i].offset * sin(holders_joints_handles_[i].getPosition()));
 		  
 		  //get the required wheel omega and the required wheel steering angle 
 		  double w_w  = sqrt(pow(wheel_vx,2)+pow(wheel_vy,2)) / wheels_[i].radius;

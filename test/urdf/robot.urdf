@@ -15,9 +15,9 @@
    </joint>
 
   <joint    name="footprint_joint"    type="fixed">
-    <origin      xyz="0.0 0.0 0.05"      rpy="0 0 3.14" />
-    <child       link="base_link" />
-    <parent      link="base_footprint" />
+    <origin      xyz="0.0 0.0 0.05"      rpy="0 0 3.1415" />
+    <parent       link="base_link" />
+    <child      link="base_footprint" />
    </joint>
 
   <link    name="body_link">
@@ -119,7 +119,7 @@
     <origin      xyz="0 0.01641 0"      rpy="0.014754 -1.5708 0" />
     <parent      link="holder1" />
     <child       link="wheel1" />
-    <axis      xyz="1 0 0" />
+    <axis      xyz="-1 0 0" />
   </joint>
 
   <link    name="holder2">
@@ -193,7 +193,7 @@
     <origin      xyz="0 0.0164098027323638 0"      rpy="1.14124810858577 -1.5707963267949 0" />
     <parent      link="holder2" />
     <child      link="wheel2" />
-    <axis      xyz="-1 0 0" />
+    <axis      xyz="1 0 0" />
   </joint>
 
   <link    name="holder3">
@@ -266,7 +266,7 @@
     <origin      xyz="0 0.0164098027323634 0"      rpy="1.86472736154635 -1.5707963267949 0" />
     <parent      link="holder3" />
    <child      link="wheel3" />
-    <axis      xyz="1 0 0" />
+    <axis      xyz="-1 0 0" />
   </joint>
 
   <link    name="holder4">
@@ -339,7 +339,7 @@
     <origin      xyz="0 0.01641 0"      rpy="3.1416 -1.5708 0" />
     <parent      link="holder4" />
     <child      link="wheel4" />
-    <axis      xyz="-1 0 0" />
+    <axis      xyz="1 0 0" />
   </joint>
 
  <gazebo reference="body_link">
@@ -347,19 +347,19 @@
   </gazebo>
 
  <gazebo reference="holder1">
-    <material>Gazebo/Orange</material>
+    <material>Gazebo/Red</material>
   </gazebo>
 
  <gazebo reference="holder2">
-    <material>Gazebo/Orange</material>
+    <material>Gazebo/Red</material>
   </gazebo>
 
  <gazebo reference="holder3">
-    <material>Gazebo/Orange</material>
+    <material>Gazebo/Green</material>
   </gazebo>
 
  <gazebo reference="holder4">
-    <material>Gazebo/Orange</material>
+    <material>Gazebo/Green</material>
   </gazebo>
 
  <gazebo reference="wheel1">

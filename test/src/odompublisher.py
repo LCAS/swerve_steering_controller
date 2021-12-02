@@ -20,9 +20,7 @@ else:
 tempname1 = rospy.Subscriber("odomw", Odometry,tf_callback)
 odom_publisher = rospy.Publisher('odom',Odometry,queue_size=5)
 
-while not rospy.is_shutdown():
-	continue
-
+rospy.spin()
 
 
 
